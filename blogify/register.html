@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to blogify!</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(39, 37, 37);
+        font-size: large;
+        padding: 10px;
+        overflow-x: hidden;
+    
+    }
+    .container{
+        width: 100vw;
+        height: 90vh;
+        /* border: 2px solid red; */
+        overflow: hidden;
+    }
+    #register{
+        width: 50vw;
+        height: 100vh;
+
+    }
+    .container2{
+        background-color: whitesmoke;
+        position: absolute;
+        top: 2px;
+      right: 80px;
+        width: 30vw;
+        height: 90vh;
+        /* border: 2px solid rgb(192, 192, 233); */
+        overflow: hidden;
+        padding-left: 25px;
+        border-radius: 8px;
+        padding: 20px;
+        /* text-align: center; */
+
+    }
+    input{
+        margin: 5px;
+        width: 300px;
+        height: 18px;
+        color: slategrey;
+        margin-left: 25px;
+        font-size: medium;
+    }
+    input:hover{
+        border: 2px solid rgb(6, 224, 6);
+    }
+    #submit{
+        position: relative;
+        right: 20px;
+        width: 27vw;
+        height: 7vh;
+        background-color: yellow;
+        color: black;
+        /* border: 4px solid white; */
+        font-size: medium;
+        text-decoration: solid;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+    }
+  
+    label{
+        color:rgb(39, 37, 37); ;
+    }
+    #head{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(39, 37, 37);
+        font-size: x-large;
+        position: relative;
+        left: 45px;
+        /* text-align: center; */
+    }
+</style>
+<body>
+    <div class="container-fluid">
+<div class="container">
+<img id='register' src="images/register.webp" alt="">
+<div class="container2">
+<h2 id="head">Welcome to our community!</h2>
+<form action="">
+    <label for="firstname">First name*</label><br>
+    <input type="text" name="firstname" id="fname" placeholder="Enter first name" required><br>
+   
+    <label for="middlename">Middle name</label><br>
+    <input type="text" name="middlename" id="midname" placeholder="Enter middle name"><br>
+
+    <label for="lastname">Last name*</label><br>
+    <input type="text" name="Last name" id="lstname" placeholder="Enter last name" required><br>
+
+    <label for="contact">Contact*</label><br>
+    <input type="number"  required><br>
+    <label for="email">Email</label><br>
+    <input type="email" name="" id="" placeholder="Enter email"><br>
+    <label for="password">Password*</label><br>
+    <input type="password" placeholder="Enter password"><br>
+
+    <label for="password">Re-enter Password</label><br>
+    <input type="password" placeholder="Re-enter password"><br>
+    
+    <input type="submit" name="submit" id="submit">
+
+
+</form>
+</div>
+</div>
+</div>
+  
+</body>
+</html>

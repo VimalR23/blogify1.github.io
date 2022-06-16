@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blogify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+                        
+</head>
+<style>
+    .container{
+        border: 9px solid lightslategrey;
+    border-style: unset;
+    width: 344px;
+    margin-left: 68px;
+    margin-top: 83px;
+   position: relative;
+    height: 413px;
+    border-radius: 3%;
+    padding: 63px;
+    background: yellow;
+  
+}
+    .container1-fluid{
+        
+        /* border: 4px lightslategray; */
+        background-color: rgb(235, 122, 30);
+        width: 355px;
+    margin-left: 488px;
+    margin-top: -93px;
+    height: 382px;
+    border-radius: 3%;
+    padding: 26px;
+
+
+    }
+.heading{
+    font-size: 130px
+    
+
+}
+.img-fluid{
+    width: 158px;
+    margin-left: -144px;
+    margin-bottom: -46px;
+}
+.gif-fluid{
+    width: 400px;
+    height: 400px;
+    border-radius: 3%;
+    /* webkit-transform: scaleX(-1); */
+    transform: scaleX(-1);
+}
+.flex-container {
+    display: flex;
+    position: relative;
+    top: 340px;
+    
+    left: 27px;
+    right: revert;
+    height: 278px;
+    
+}
+
+
+.flex-child {
+    flex: 1;
+    margin-right: 40px;
+    padding: 10px;
+    background: white;
+    border-radius: 5%;
+    height: fit-content;
+    font-family: cursive;
+    border: 1px solid grey;
+}
+body{
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+
+.flex-child:first-child {
+    margin-right: 40px;
+}
+#flex3{
+    margin-left: 15px;
+}
+#img1{
+    position: relative;
+    left: 40px;
+    top: 0px;
+    border-radius: 5%;
+    width: 198px;
+    height: 137px;
+}
+#img1:hover{
+
+    transform: scale(1.5);
+
+
+}
+#img2:hover{
+
+transform: scale(1.5);
+
+
+}
+#img3:hover{
+
+transform: scale(1.5);
+
+
+}
+#img4:hover{
+
+transform: scale(1.5);
+
+
+}
+#img2{
+
+    position: relative;
+    left: 40px;
+    top: 0px;
+    border-radius: 5%;
+    width: 198px;
+    height: 137px;
+   
+}
+#img3{
+    background-color: bisque;
+    position: relative;
+    left: 40px;
+    top: 0px;
+    border-radius: 5%;
+    width: 198px;
+    height: 137px;
+
+}
+#img4{
+    position: relative;
+    left: 40px;
+    top: 0px;
+    border-radius: 5%;
+    width: 198px;
+    height: 137px;
+}
+#mynav:hover{
+    background-color: black;
+    color: white;
+
+
+}
+.gif-fluid{
+    border: 3px solid mediumslateblue;
+}
+.btn{
+    margin:2px;
+    width: 200px;
+}
+footer{
+        background-color: lightslategrey;
+        color: whitesmoke;
+        text-align: center;
+        position: relative;
+        top: 500px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #btn{
+        text-decoration: none;
+        color: white;
+
+    }
+    .modal-body{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 12px;
+        color:- lightslategray
+    }
+    label{
+        margin: 12px;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #check{
+        margin: 0;
+    position: relative;
+    right: 163px;
+    top: 1px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+    
+    input{
+        margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    
+    line-height: inherit
+    }
+    #login{
+        position: relative;
+    left: 22px;
+    bottom: -15px;
+    margin: 10px;
+   
+    font-size: 25px;
+    overflow: hidden;
+    width: 90%;
+    }
+    #forget-pass{
+        text-decoration: none;
+    position: relative;
+    left: 170px;
+
+
+}
+#cml{
+    position: relative;
+    right: 153px;
+}
+        
+    
+    #forget-pass:hover{
+        text-decoration: underline;
+        color:blueviolet;
+        position: relative;
+       
+    }
+input:hover{
+        border: 2px solid rgb(14, 214, 14);
+    }
+    ::-webkit-input-placeholder { 
+  opacity: 1;
+font-size: medium;
+font-weight: 400;
+}
+#show{
+    position: relative;
+    left: 150px;
+}
+
+#register{
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+
+}
+#btnreg:hover{
+    background-color: black;
+    color:  rgb(255, 208, 0);
+}
+
+
+</style> 
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light" id="mynav">
+        <div class="container-fluid">
+           
+            
+            <a class="navbar-brand" href="#">Blogify</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                  
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Genre
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="programing.html">Programming</a></li>
+                            <li><a class="dropdown-item" href="entertainment.html">Entertainment</a></li>
+                            <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Create your own</a></li>
+                        </ul>
+                    </li>
+                    <!-- C:\Users\pc\Desktop\java script\websites\website1.html -->
+                </ul>
+                <button type="button" class="btn btn-outline-primary " data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign in</button>
+                <button type="button" class="btn btn-outline-warning " id="btnreg" ><a id="register" href="register.html">Register</a></button>
+                
+                
+            </div>
+        </div>
+    </nav>
+   
+      
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title-centre" id="staticBackdrop">Ciao blogifian!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                  <form action="">
+                  <label for="" >Username</label>
+                  <input type="text" name="" id="usn" placeholder="Enter username" required><br>
+                  <label for="pass">Password</label>
+                 <input type="password" id="myInput" placeholder="Enter password"><br>
+                  <input type="checkbox" id="show" onclick="myFunction()">Show Password
+                  <a href="" id="forget-pass">Forget password?</a>
+                <button type="submit" class="btn btn-primary" id="login" >Sign in</button>
+              </form>
+  
+            </div>
+           
+              
+              
+          </div>
+        </div>
+      </div>
+    
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myInput");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+
+        
+        }
+        </script>
+      <!-- register form -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title-centre" id="staticBackdrop">Ciao blogifian!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            
+                  <form action="">
+                  <label for="" >Username</label>
+                  <input type="text" name="" id="usn" placeholder="Enter username" required><br>
+                  <label for="pass">Password</label>
+                  <input type="text" placeholder="Enter Password" required><br><a href="" id="forget-pass">Forget password?</a>
+          
+                  <label for="" id="cml">check me later</label>
+                <input type="checkbox" name="" id="check">
+                <button type="submit" class="btn btn-primary" id="login" >Sign in</button>
+              </form>
+  
+            </div>
+           
+              
+              
+          </div>
+        </div>
+      </div>
+    
+      </div>
+     
+    <div class="container-fluid">
+        
+    <div class="container" id="logo"> <img class="img-fluid" src="images/quotes.png" alt=""><h2 class="heading">Blogify</h2>
+        <div class="container1-fluid" id="girl-book"> 
+            <img  class= "gif-fluid" src="images/girl-book.gif" alt="">
+           
+        </div>
+    </div>
+    </div>
+    <div class="flex-container">
+
+        <div class="flex-child magenta" id="flex1">
+            <img class="img-top" id="img1" src="images/code.gif" width="200" height="200" alt="">
+            <h5 class="text-warning">Programming</h5>
+            <hr>
+          <a href="programing.html"><p>Top 10 programming languages to learn in 2022 for higher package.</p></a>
+            <button type="button" class="btn btn-primary" ><a id = "btn" href="programing.html">read more</a></button>
+        </div>
+        
+        <div class="flex-child green" id="flex2">
+            <img class="img-top" id="img2" src="images/rawr.gif" width="200" height="200" alt="">
+            <h5 class="text-primary">Investment</h5>
+            <hr>
+            <a href="investment.html"><p>Where to invest your money, 8 best short-term invest in may 2022.</p></a>
+            <button type="button" class="btn btn-primary"><a id="btn" href="investment.html">read more</a></button>
+        </div>
+    <div class="flex-child" id="flex3">
+        <img class="img-top" id="img3" src="images/diet2.gif" width="200" height="200" alt="">
+        <h5 class="text-success">Fitness</h5>
+        <hr>
+        <a href="diet.html"><p>10 superfoods must add on your daily diet for better results.</p></a>
+        <button type="button" class="btn btn-primary"><a id="btn" href="diet.html">read more</a></button>
+    
+        </div>
+        <div class="flex-child" id="flex4">
+            <img class="img-top" id="img4" src="images/sports.gif" width="200" height="200" alt="">
+            <h5 class="text-danger">Sports</h5>
+            <hr>
+            <a href="sports.html"><p>Sports News-IPL points table, Uefa final RMA vs LIV,e-sports,Live ufc.
+            </p></a>
+            <button type="button" class="btn btn-primary"><a id="btn" href="sports.html">read more</a></button>
+        </div>
+        
+   
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous">
+    </script>
+        
+        <footer>
+   
+            <address>
+                Written by <a href="vimalrajv080@gmail.com">Vimal Raj</a>.<br> 
+                Visit us at:<br>
+                <a href="website1.html">Blogify.com</a><br>
+                Phase 3, DLF cyber city<br>
+                gurugram, haryana
+                </address>
+           
+                <mobile>
+                    +91 85271-95478
+                </mobile>
+        </footer>
+</body>
+
+</html>
